@@ -1,14 +1,25 @@
-package br.com.bibliotecaabc.model;
+package com.bibliotecaabc.model;
 
 public class Livro {
+
     private Integer id;
     private String issn;
     private String titulo;
     private String sinopse;
     private Integer ano;
-    private Integer numeroPaginas;
+    private Integer numeroDePaginas;
 
-    // Getters e Setters
+    public Livro() {
+    }
+
+    public Livro(Integer id, String issn, String titulo, String sinopse, Integer ano, Integer numeroDePaginas) {
+        this.id = id;
+        this.issn = issn;
+        this.titulo = titulo;
+        this.sinopse = sinopse;
+        this.ano = ano;
+        this.numeroDePaginas = numeroDePaginas;
+    }
 
     public Integer getId() {
         return id;
@@ -50,11 +61,11 @@ public class Livro {
         this.ano = ano;
     }
 
-    public Integer getNumeroPaginas() {
-        return numeroPaginas;
+    public Integer getNumeroDePaginas() {
+        return numeroDePaginas;
     }
 
-    public void setNumeroPaginas(Integer numeroPaginas) {
-        this.numeroPaginas = numeroPaginas;
+    public void setNumeroDePaginas(Integer numeroDePaginas) {
+        this.numeroDePaginas = numeroDePaginas;
     }
 }
